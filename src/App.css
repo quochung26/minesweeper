@@ -1,0 +1,122 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+
+.info {
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.info select {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.info select:focus-visible {
+  outline: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.info-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.squares {
+  display: grid;
+  grid-template-columns: repeat(18, 41px);
+  border-top: 1px solid #76885B;
+  border-right: 1px solid #76885B;
+}
+
+.squares.easy {
+  grid-template-columns: repeat(10, 41px);
+}
+
+.squares.hard {
+  grid-template-columns: repeat(24, 41px);
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDDDDD;
+  border-left: 1px solid #76885B;
+  border-bottom: 1px solid #76885B;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.square:not(div[class*="mine"]):hover {
+  background-color: #EEEEEE;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #fff;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #000000;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:focus-visible {
+  outline: none;
+}
+
+.result {
+  font-size: 36px;
+}
+
+.mine-0 {
+  background-color: #EEEEEE;
+}
+
+.mine-1 {
+  color: blue;
+}
+
+.mine-2 {
+  color: green;
+}
+
+.mine-3 {
+  color: red;
+}
+
+.mine-4 {
+  color: purple;
+}
+
+.mine-5 {
+  color: brown;
+}
+
+.mine-6 {
+  color: yellow;
+}
